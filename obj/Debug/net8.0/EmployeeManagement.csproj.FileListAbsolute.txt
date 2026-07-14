@@ -1,0 +1,14 @@
+/home/github-runner/actions-runner/EmployeeManagement/bin/Debug/net8.0/EmployeeManagement
+/home/github-runner/actions-runner/EmployeeManagement/bin/Debug/net8.0/EmployeeManagement.deps.json
+/home/github-runner/actions-runner/EmployeeManagement/bin/Debug/net8.0/EmployeeManagement.runtimeconfig.json
+/home/github-runner/actions-runner/EmployeeManagement/bin/Debug/net8.0/EmployeeManagement.dll
+/home/github-runner/actions-runner/EmployeeManagement/bin/Debug/net8.0/EmployeeManagement.pdb
+/home/github-runner/actions-runner/EmployeeManagement/obj/Debug/net8.0/EmployeeManagement.GeneratedMSBuildEditorConfig.editorconfig
+/home/github-runner/actions-runner/EmployeeManagement/obj/Debug/net8.0/EmployeeManagement.AssemblyInfoInputs.cache
+/home/github-runner/actions-runner/EmployeeManagement/obj/Debug/net8.0/EmployeeManagement.AssemblyInfo.cs
+/home/github-runner/actions-runner/EmployeeManagement/obj/Debug/net8.0/EmployeeManagement.csproj.CoreCompileInputs.cache
+/home/github-runner/actions-runner/EmployeeManagement/obj/Debug/net8.0/EmployeeManagement.dll
+/home/github-runner/actions-runner/EmployeeManagement/obj/Debug/net8.0/refint/EmployeeManagement.dll
+/home/github-runner/actions-runner/EmployeeManagement/obj/Debug/net8.0/EmployeeManagement.pdb
+/home/github-runner/actions-runner/EmployeeManagement/obj/Debug/net8.0/EmployeeManagement.genruntimeconfig.cache
+/home/github-runner/actions-runner/EmployeeManagement/obj/Debug/net8.0/ref/EmployeeManagement.dll
