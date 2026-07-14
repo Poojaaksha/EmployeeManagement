@@ -6,24 +6,18 @@ on:
       - main
 
 jobs:
-
   build:
-
     runs-on: self-hosted
-    
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Checkout code
-      uses: actions/checkout@v4
+      - name: Verify .NET
+        run: dotnet --info
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 8.0.x
+      - name: Restore packages
+        run: dotnet restore
 
-    - name: Restore packages
-      run: dotnet restore
-
-    - name: Build application
-      run: dotnet build --configuration Release
+      - name: Build application
+        run: dotnet build --configuration Release --no-restore
