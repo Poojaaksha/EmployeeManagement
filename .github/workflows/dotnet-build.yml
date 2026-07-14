@@ -7,9 +7,11 @@ on:
 
 jobs:
   build:
+
     runs-on: self-hosted
 
     steps:
+
       - name: Checkout code
         uses: actions/checkout@v4
 
@@ -17,7 +19,13 @@ jobs:
         run: dotnet --info
 
       - name: Restore packages
-        run: dotnet restore
+        run: dotnet restore EmployeeManagement.sln
 
       - name: Build application
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build EmployeeManagement.sln --configuration Release
+
+      - name: Unit Test
+        run: dotnet test EmployeeManagement.sln --configuration Release
+
+      - name: Run .NET Application
+        run: dotnet run --project EmployeeManagement.csproj
