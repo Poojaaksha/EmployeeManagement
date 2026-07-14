@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/github-runner/actions-runner/EmployeeManagement/EmployeeManagement.csproj": {}
+    "/home/github-runner/EmployeeManagement/EmployeeManagement.csproj": {}
   },
   "projects": {
-    "/home/github-runner/actions-runner/EmployeeManagement/EmployeeManagement.csproj": {
+    "/home/github-runner/EmployeeManagement/EmployeeManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/github-runner/actions-runner/EmployeeManagement/EmployeeManagement.csproj",
+        "projectUniqueName": "/home/github-runner/EmployeeManagement/EmployeeManagement.csproj",
         "projectName": "EmployeeManagement",
-        "projectPath": "/home/github-runner/actions-runner/EmployeeManagement/EmployeeManagement.csproj",
+        "projectPath": "/home/github-runner/EmployeeManagement/EmployeeManagement.csproj",
         "packagesPath": "/home/github-runner/.nuget/packages/",
-        "outputPath": "/home/github-runner/actions-runner/EmployeeManagement/obj/",
+        "outputPath": "/home/github-runner/EmployeeManagement/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/github-runner/.nuget/NuGet/NuGet.Config"

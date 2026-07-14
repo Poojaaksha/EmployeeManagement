@@ -1,10 +1,36 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+name: .NET Build
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+on:
+  push:
+    branches:
+      - main
 
-</Project>
+jobs:
+  build:
+
+    runs-on: linux-agent
+
+    steps:
+
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Restore
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build --configuration Release
+
+    - name: Lint
+      run: |
+        dotnet tool install -g dotnet-format
+        export PATH="$PATH:$HOME/.dotnet/tools"
+        dotnet format --verify-no-changes
+
+    - name: Unit Test
+      run: dotnet test EmployeeManagement.sln --configuration Release
