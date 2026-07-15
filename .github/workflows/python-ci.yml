@@ -18,8 +18,11 @@ jobs:
       - name: Verify Python Installation
         run: python3 --version
 
+      - name: Verify Pip Installation
+        run: python3 -m pip --version
+
       - name: Install Dependencies
-        run: pip3 install -r PythonApp/requirements.txt
+        run: python3 -m pip install -r PythonApp/requirements.txt
 
       - name: Execute Python Application
         run: python3 PythonApp/app.py
