@@ -8,7 +8,6 @@ on:
 jobs:
   build:
     runs-on: self-hosted
-
     environment: dev
 
     env:
@@ -19,7 +18,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Display Environment Variable
-        run: echo "Application Name: $APP_NAME"
+        run: |
+          echo "Application Name: ${APP_NAME}"
 
       - name: Execute Python Application
-        run: python3 PythonApp/app.py
+        run: |
+          python3 PythonApp/app.py
