@@ -7,22 +7,19 @@ on:
 
 jobs:
   build:
-
     runs-on: self-hosted
 
-    steps:
+    environment: dev
 
+    env:
+      APP_NAME: ${{ vars.APP_NAME }}
+
+    steps:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Verify Python Installation
-        run: python3 --version
-
-      - name: Verify Pip Installation
-        run: python3 -m pip --version
-
-      - name: Install Dependencies
-        run: python3 -m pip install -r PythonApp/requirements.txt
+      - name: Display Environment Variable
+        run: echo "Application Name: $APP_NAME"
 
       - name: Execute Python Application
         run: python3 PythonApp/app.py
